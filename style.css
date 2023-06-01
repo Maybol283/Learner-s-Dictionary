@@ -1,0 +1,19 @@
+* {
+    background-color: lightblue;
+    
+  }
+  
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #inputForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 20vh;
+    background-color: red;
+    border: 1px black solid;
+  }
