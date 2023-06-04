@@ -1,19 +1,111 @@
 * {
-    background-color: lightblue;
-    
+    overflow: hidden;
+    font-size: 16px;
+    background: #e0e5ec;
+    margin: 0px;
+    background: white;
+    border: black 1px solid;
   }
   
   body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
+   background-image: url(https://cdn.dribbble.com/users/1936570/screenshots/15671618/media/8b5f68528a7089ad95e2cb9a98f3977f.gif)
   }
-  #inputForm {
+  
+  main {
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  height: 100vh;
+  width: 75vw;
+  text-align: center;
+  background: #e0e5ec;
+  }
+  
+  h1 {
+    font-size: 3em;
+    background: #e0e5ec;
+  }
+  .m-background {
+  background: #e0e5ec;
+  }
+  
+  
+  form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
-    height: 20vh;
-    background-color: red;
-    border: 1px black solid;
+    margin: 50px 0;
+    background: #e0e5ec;
+  }
+  
+  input, button {
+  font-size: 1.5em;
+  font-weight: 300px;
+  font-family: sans-serif;
+  }
+  
+  button {
+    width: 80px;
+    height: 36px;
+    box-shadow: inset 2px 2px 2px 0px rgba(41, 185, 255, .8);
+    background: rgba(2,254,255,1);
+    background: linear-gradient(90deg, rgba(2,254,255,1) 3%, rgba(4,17,240,1) 100%);
+    outline: none;
+    border-radius: 0% 10px 10px 0%
+  }
+  
+  i {
+    position: relative;
+    bottom: 2px;
+    right: 6px;
+    background: transparent;
+    padding: 10px 0 0 0;
+    height: 35px;
+    width: 80px;
+    border-radius: 0% 10px 10px 0%;
+  }
+  
+  i:hover {
+    color: white;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(4,17,240,1) 0%, rgba(2,254,255,1) 100% );
+    transition: all 0.3 ease;
+  }
+  
+  input {
+    height: 36px;
+    border-radius: 10px 0% 0% 10px;
+    background: white;
+  }
+
+#information{
+visibility: visible;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 30vw;
+height: 35vh;
+}
+.Hword {
+font-size: 3em;
+}
+
+  div{
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-style: italic;
   }
