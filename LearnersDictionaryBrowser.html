@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="big-border">
     <main>
+
     <h1>Learners's Dictionary</h1>
     <section id="search-bar" class="m-background">
     <form id="inputForm">
-      <input type = "text" name= "word" placeholder="Search...">
+      <input type = "text" name= "word" placeholder="Search..." onclick=>
       <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
     </section>
@@ -21,10 +23,12 @@
    <div class="Hword">Headword
    
    </div>
-   <div class="word">Defintion <p>This is infomation about the word</p></div>
-   <div class="word">Example sentence<p>This is the example sentence using the word</p></div>
+   <div class="word">Defintion<p id="definition">This is infomation about the word</p></div>
+   <div class="word">Example sentence<p id="example-sentence">This is the example sentence using the word</p></div>
   </section>
+
     </main>
+  </div >
   </body>
   	<script src="index.js"></script>
 </html>
