@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <script src="https://kit.fontawesome.com/48bcbf2c30.js" crossorigin="anonymous"></script>
@@ -10,25 +9,22 @@
   </head>
   <body>
     <div class="big-border">
-    <main>
+      <main>
+        <h1>Learners's Dictionary</h1>
+        <section id="search-bar" class="m-background">
+          <form action="" id="inputForm">
+            <input type="text" id="word" placeholder="Search...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </section>
+        <section id="information" class="m-background">
+          <div class="Hword" id="headword">Headword</div>
+          <div class="word">Definition<p id="definition">This is information about the word</p></div>
+          <div class="word">Example sentence<p id="example-sentence">This is the example sentence using the word</p></div>
+        </section>
+      </main>
+    </div>
 
-    <h1>Learners's Dictionary</h1>
-    <section id="search-bar" class="m-background">
-    <form id="inputForm">
-      <input type = "text" name= "word" placeholder="Search..." onclick=>
-      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
-    </section>
-  <section id="information" class="m-background">
-   <div class="Hword">Headword
-   
-   </div>
-   <div class="word">Defintion<p id="definition">This is infomation about the word</p></div>
-   <div class="word">Example sentence<p id="example-sentence">This is the example sentence using the word</p></div>
-  </section>
-
-    </main>
-  </div >
+    <script src="Learner'sDictionaryScript.js"></script>
   </body>
-  	<script src="index.js"></script>
 </html>

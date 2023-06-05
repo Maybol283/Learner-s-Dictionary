@@ -58,15 +58,14 @@
         transparent,
         transparent 50%,
        white 0%,
-       brown 100%);
-                   background-position: 0% 0;
+       rgba(39, 0, 0, 0.944) 100%);
+        background-position: 0% 0;
     background-size: 200% 100%;
     transition: all .25s ease-in;
   }
   
   i {
     position: relative;
-
     background: transparent;
     padding: 10px 0 0 0;
     width: 60px;
@@ -125,6 +124,7 @@ font-size: 3em;
   }
 
   .big-border {
+    box-shadow: inset 2px 2px 0px 5px rgba(134, 1, 1, 0.944);
     border: 10px solid rgba(39, 0, 0, 0.944);
     border-radius: 10px;
   }
