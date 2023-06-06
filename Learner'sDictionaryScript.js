@@ -15,6 +15,7 @@ function merriamApiRequest(word){
  })
  .then(data => { 
    console.log(data);
+   searchObject(data, t);
    handleApiResponse(data);
  })
  .catch(error => {
@@ -22,12 +23,33 @@ function merriamApiRequest(word){
  });
 }
 
+function dataSorter(data){
+let example = Object.keys(data).find(ele => ele == 't');
+console.log(example);
+}
+
+
+function searchObject(data, searchTerm) {
+  for (const value in data) {
+    if (typeof data[key] === 'object') {
+      const result = searchObject(data[key], searchTerm);
+      if (result) return result;
+    } else if (data[key] === searchTerm) {
+      console.log(data[key]);
+      return data[key];
+    }
+  }
+  return null; // Element not found
+}
+
 
 function handleApiResponse(data) {
-  const headwordEle = document.getElementById('headword');
- console.log(data[0].hwi.hw);
+
+const definitionEle = document.getElementById('definition');
+const exampleEle = document.getElementById('example')
   if (data[0].hwi.hw) {
-    headwordEle.textContent = data[0].hwi.hw;
+    definitionEle.textContent = data[0].shortdef[0];
+    exampleEle.textContent = data[0].def[0].sseq[0][0][1].dt[2][1][0].t;
   } else {
     alert("No Word Found!");
   }
@@ -39,7 +61,7 @@ let submission = document.getElementById("inputForm");
 
 submission.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+    const headwordEle = document.getElementById('headword');
     let word = document.getElementById("word");
 
     if(word.value == ""){
@@ -48,7 +70,9 @@ submission.addEventListener("submit", (e) => {
     } else {
         word.value = word.value.toLowerCase();
         merriamApiRequest(word.value);
+        headwordEle.textContent = word.value;
     }
    
-    document.getElementById("word").value = ""
+
 })
+
