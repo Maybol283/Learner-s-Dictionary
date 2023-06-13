@@ -1,144 +1,164 @@
 * {
-    overflow: hidden;
-    font-size: 20px;
-    margin: 0px;
-    background: #F9D8A7;
-  }
-  
-  body{
-   display: flex;
-   justify-content: center;
-   background-image: url(https://cdn.dribbble.com/users/1936570/screenshots/15671618/media/8b5f68528a7089ad95e2cb9a98f3977f.gif)
-  }
-  
-  main {
-  padding: 10px 0px;;
-  display: flex;
-  flex-direction: column;
-  align-items:center ;
-  height: 100vh;
-  width: 50vw;
-  text-align: center;
+  font-size: 20px;
+  margin: 0px;
   background: #F9D8A7;
-  border: solid 2px gold;
-  }
-  
-  h1 {
-    font-style: oblique;
-    margin: 30px 0;
-    font-size: 3em;
-  }
-  .m-background {
-  background: #F9D8A7;
-  }
-  
-  
-  form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0;
-    background: #F9D8A7;
-  }
-  
-  input, button {
-    border: 1px solid black;
-    font-size: 1.5em;
-    font-weight: 300px;
-    font-family: sans-serif;
-    height: 40px;
-    }
-  
-  button {
-    width: 60px;
-    background: white;
-    border-radius: 0% 10px 10px 0%;
-    border-left: none;
-    background-image: linear-gradient(to right,
-        transparent,
-        transparent 50%,
-       white 0%,
-       rgba(39, 0, 0, 0.944) 100%);
-        background-position: 0% 0;
-    background-size: 200% 100%;
-    transition: all .25s ease-in;
-  }
-  
-  i {
-    position: relative;
-    background: transparent;
-    padding: 10px 0 0 0;
-    width: 60px;
-    height: 40px;
-    border-radius: 0% 10px 10px 0%;
-  }
-  
-  i:hover {
-    color: white;
-  }
-  
-  button:hover {
-    cursor: pointer;
-    background-position: 100% 0;
-  }
-  
-  input {
-    padding: 0 0 0 5px;
-    width: 200px;
-    border-radius: 10px 0% 0% 10px;
-    background: white;
-    border-right: none;
-  }
-
-  input:focus {
-    outline: none;
-  }
-
-  #information{
-    animation: dropDown 1s ease 0s 1 forwards;
-    border: brown 4px solid;
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 250px;
-    }
-.Hword {
-font-size: 3em;
 }
 
-  div{
-    font-weight: bold;
-    margin: 10px 0;
+body{
+ display: flex;
+ justify-content: center;
+ background-image: url(https://cdn.dribbble.com/users/1936570/screenshots/15671618/media/8b5f68528a7089ad95e2cb9a98f3977f.gif)
+}
+
+main {
+position: relative;
+padding: 10px 0px;
+display: flex;
+flex-direction: column;
+align-items:center ;
+height: 100vh;
+width: 50vw;
+text-align: center;
+background: #F9D8A7;
+border: solid 2px gold;
+}
+
+h1 {
+  font-style: oblique;
+  margin: 30px 0;
+  font-size: 3em;
+}
+
+.m-background {
+background: #F9D8A7;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  background: #F9D8A7;
+}
+
+input, button {
+  border: 1px solid black;
+  font-size: 1.5em;
+  font-weight: 300px;
+  font-family: sans-serif;
+  height: 40px;
   }
 
+button {
+  height: 41px;
+  width: 60px;
+  background: white;
+  border-radius: 0% 10px 10px 0%;
+  border-left: none;
+  background-image: linear-gradient(to right,
+      transparent,
+      transparent 50%,
+     white 0%,
+     rgba(39, 0, 0, 0.944) 100%);
+  background-position: 0% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+}
 
-  p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: normal;
-    font-style: italic;
+i {
+  position: relative;
+  background: transparent;
+  padding: 10px 0 0 0;
+  width: 60px;
+  height: 40px;
+  border-radius: 0% 10px 10px 0%;
+}
+
+i:hover {
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-position: 100% 0;
+}
+
+input {
+  padding: 0 0 0 5px;
+  width: 200px;
+  border-radius: 10px 0% 0% 10px;
+  background: white;
+  border-right: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+#information{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: brown 4px solid;
+  max-width: 500px;
   }
 
-  .big-border {
-    box-shadow: inset 2px 2px 0px 5px rgba(134, 1, 1, 0.944);
-    border: 10px solid rgba(39, 0, 0, 0.944);
-    border-radius: 10px;
+div:nth-child(1) {
+ font-size: 2em;
+ }
+
+.word {
+ margin: 10px 0;
+ font-weight: bold;
+ width: fit-content;
+ height: fit-content;
+ }
+
+p {
+  font-weight: normal;
+  font-style: italic;
+  width: inherit;
+  height: inherit;
+}
+
+.big-border {
+  box-shadow: inset 2px 2px 0px 5px rgba(134, 1, 1, 0.944);
+  border: 10px solid rgba(39, 0, 0, 0.944);
+  border-radius: 10px;
+}
+
+.slideOff {
+animation: slideOff 1s ease forwards;
+}
+
+.slideOn {
+animation: slideOn 1s ease forwards;
+}
+
+@keyframes slideOff {
+  from {
+    transform: translate(-50%, -20%);
+    opacity: 1;
   }
-
-
-
-
-  @keyframes dropDown {
-    from {
-      height: 0px;
-      opacity: 0;
-    }
-    to {
-      height: 250px;
-      opacity: 1;
-    }
+  to {
+    transform: translate(50%, -20%);
+    opacity: 0;
   }
+}
+
+@keyframes slideOn {
+  from {
+    transform: translate(-150%, -20%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -20%);
+    opacity: 1;
+  }
+}
